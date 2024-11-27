@@ -21,6 +21,11 @@ jobs:
         with:
           dotnet-version: "9.0.x"
 
+      - name: Check Internet Connectivity
+        run: |
+          ping -c 4 google.com
+          curl -I https://chromedriver.storage.googleapis.com
+
       - name: Install Google Chrome
         run: |
           sudo apt-get update
@@ -28,10 +33,10 @@ jobs:
 
       - name: Install ChromeDriver (Matching Current Chrome Version)
         run: |
-          CHROME_VERSION=$(google-chrome --version | sed 's/Google Chrome //' | cut -d '.' -f 1,2,3)
+          CHROME_VERSION=$(google-chrome --version | sed 's/Google Chrome //' | cut -d '.' -f 1)
           DRIVER_VERSION=$(curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION)
-          echo "Detected Chrome Version: $CHROME_VERSION"
-          echo "Matching ChromeDriver Version: $DRIVER_VERSION"
+          echo "Chrome Version: $CHROME_VERSION"
+          echo "ChromeDriver Version: $DRIVER_VERSION"
           wget -N https://chromedriver.storage.googleapis.com/$DRIVER_VERSION/chromedriver_linux64.zip
           unzip chromedriver_linux64.zip
           sudo mv chromedriver /usr/local/bin/
