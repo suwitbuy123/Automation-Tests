@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: build-and-test
 
 on:
   push:
@@ -7,9 +7,11 @@ on:
   pull_request:
     branches:
       - develop
+
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -19,22 +21,24 @@ jobs:
         with:
           dotnet-version: "9.0.x"
 
-      # Install Chrome
       - name: Install Chrome
-        run: sudo apt-get install -y google-chrome-stable
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
 
-      # Install ChromeDriver
       - name: Install ChromeDriver
-        run: sudo apt-get install -y chromedriver
+        run: |
+          CHROME_DRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
+          wget -N https://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver /usr/local/bin/
+          sudo chmod +x /usr/local/bin/chromedriver
 
-      # Restore dependencies
       - name: Restore Dependencies
         run: dotnet restore
 
-      # Build the project
       - name: Build the project
-        run: dotnet build --no-restore --configuration Debug
+        run: dotnet build --no-restore
 
-      # Run Tests
       - name: Run Tests
         run: dotnet test --no-build --verbosity normal
