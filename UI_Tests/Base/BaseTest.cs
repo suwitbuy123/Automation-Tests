@@ -14,11 +14,11 @@ namespace UI_Tests.Base
         {
             // Initializes the WebDriver, maximizes the browser, and navigates to the base URL
             var options = new ChromeOptions();
-            options.AddArguments("--headless"); // Run in headless mode
-            options.AddArguments("--no-sandbox"); // Bypass OS security model
-            options.AddArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
-            options.AddArguments("--disable-gpu"); // Disable GPU
-            options.AddArguments("--window-size=1920,1080"); // Set window size
+            options.AddArgument("--headless"); // Run in headless mode
+            options.AddArgument("--no-sandbox"); // Required for CI environments
+            options.AddArgument("--disable-dev-shm-usage"); // Reduce shared memory usage
+            options.AddArgument("--disable-gpu"); // Optional: Disable GPU rendering for better compatibility
+
             driver = new ChromeDriver(options);
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://www.saucedemo.com");
