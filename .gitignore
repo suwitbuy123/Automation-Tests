@@ -396,3 +396,16 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Visual Studio Files
+*.suo
+*.user
+*.cache
+*.log
+
+# Ignore all bin and obj directories
+bin/
+obj/
+
+# Test Reports
+Reports/
