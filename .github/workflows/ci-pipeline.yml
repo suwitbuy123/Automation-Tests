@@ -7,50 +7,34 @@ on:
   pull_request:
     branches:
       - develop
-
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      # Step 2: Set up .NET environment
-      - name: Setup .NET
+      - name: Setup .NET Core
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 9.0
+          dotnet-version: "9.0.x"
 
-      # Step 3: Install Chrome and dependencies for Selenium
-      - name: Install Chrome and Dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y wget unzip
-          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo dpkg -i google-chrome-stable_current_amd64.deb || sudo apt-get -f install -y
+      # Install Chrome
+      - name: Install Chrome
+        run: sudo apt-get install -y google-chrome-stable
 
-      # Step 4: Restore NuGet packages
-      - name: Restore NuGet Packages
+      # Install ChromeDriver
+      - name: Install ChromeDriver
+        run: sudo apt-get install -y chromedriver
+
+      # Restore dependencies
+      - name: Restore Dependencies
         run: dotnet restore
 
-      # Step 5: Build the solution
-      - name: Build Solution
+      # Build the project
+      - name: Build the project
         run: dotnet build --no-restore --configuration Debug
 
-      # Step 6: Run Tests
+      # Run Tests
       - name: Run Tests
         run: dotnet test --no-build --verbosity normal
-        continue-on-error: true
-
-      # Step 7: Upload test results as artifacts for debugging
-      - name: Upload Test Results
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: Test-Results
-          path: |
-            API_Tests/Reports/
-            UI_Tests/Reports/
-            UI_Tests/bin/Debug/net9.0/Screenshots/
