@@ -77,7 +77,7 @@ namespace API_Tests.Base
 
             if (!Directory.Exists(reportFolder))
             {
-                Directory.CreateDirectory(reportFolder); // Ensure the report directory exists
+                Directory.CreateDirectory(reportFolder); // Ensure the report directory exists.
             }
 
             return reportFilePath;
