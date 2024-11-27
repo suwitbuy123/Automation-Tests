@@ -64,7 +64,7 @@ namespace UI_Tests.Base
         {
             try
             {
-                // Defines the folder path to save screenshots
+                // Defines the folder path to save screenshots.
                 string screenshotsFolder = Path.Combine(Directory.GetCurrentDirectory(), "Screenshots");
                 if (!Directory.Exists(screenshotsFolder))
                 {
