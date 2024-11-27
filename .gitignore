@@ -396,3 +396,16 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Visual Studio Files
+*.suo
+*.user
+*.cache
+*.log
+
+# Build Artifacts
+bin/
+obj/
+
+# Test Reports
+Reports/
