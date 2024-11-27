@@ -13,13 +13,7 @@ namespace UI_Tests.Base
         public void SetUp()
         {
             // Initializes the WebDriver, maximizes the browser, and navigates to the base URL
-            var options = new ChromeOptions();
-            options.AddArgument("--headless"); // Run in headless mode
-            options.AddArgument("--no-sandbox"); // Required for CI environments
-            options.AddArgument("--disable-dev-shm-usage"); // Reduce shared memory usage
-            options.AddArgument("--disable-gpu"); // Optional: Disable GPU rendering for better compatibility
-
-            driver = new ChromeDriver(options);
+            driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://www.saucedemo.com");
         }
@@ -68,26 +62,24 @@ namespace UI_Tests.Base
         /// </summary>
         private void CaptureScreenshot()
         {
-            if (driver == null)
-            {
-                TestContext.WriteLine("Driver is not initialized. Screenshot capture skipped.");
-                return;
-            }
-
             try
             {
+                // Defines the folder path to save screenshots
                 string screenshotsFolder = Path.Combine(Directory.GetCurrentDirectory(), "Screenshots");
                 if (!Directory.Exists(screenshotsFolder))
                 {
                     Directory.CreateDirectory(screenshotsFolder);
                 }
 
+                // Generates a file name for the screenshot based on the test name and timestamp
                 string fileName = $"{TestContext.CurrentContext.Test.Name}_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.png";
                 string filePath = Path.Combine(screenshotsFolder, fileName);
 
+                // Captures the screenshot and saves it as a PNG file
                 var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
                 screenshot.SaveAsFile(filePath);
 
+                // Logs the screenshot location
                 TestContext.WriteLine($"Screenshot captured: {filePath}");
             }
             catch (Exception ex)
@@ -95,7 +87,6 @@ namespace UI_Tests.Base
                 TestContext.WriteLine($"Failed to capture screenshot: {ex.Message}");
             }
         }
-
 
         /// <summary>
         /// Waits for the current URL to match the expected URL within the specified timeout.
