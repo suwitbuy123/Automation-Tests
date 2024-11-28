@@ -409,3 +409,8 @@ obj/
 
 # Test Reports
 Reports/
+
+/UI_Tests/bin/Debug/net9.0/Screenshots/
+
+/UI_Tests/bin/Debug/net9.0/TestData/
+!UI_Tests/TestData/TestCredentials.json
