@@ -407,10 +407,12 @@ FodyWeavers.xsd
 bin/
 obj/
 
-# Test Reports
+# Ignore test reports
 Reports/
 
+# Ignore screenshots generated in runtime
 /UI_Tests/bin/Debug/net9.0/Screenshots/
 
+# Ignore TestData folder inside build output but include the original credentials file
 /UI_Tests/bin/Debug/net9.0/TestData/
 !UI_Tests/TestData/TestCredentials.json
