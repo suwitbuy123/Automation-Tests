@@ -13,38 +13,55 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout code from the repository
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      # Step 2: Setup .NET Core SDK version 9.0.x
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: "9.0.x"
 
+      # Step 3: Verify the versions of Google Chrome and ChromeDriver (if already installed)
       - name: Verify Chrome and ChromeDriver Versions
         run: |
-          google-chrome --version || echo "Google Chrome not installed"
-          chromedriver --version || echo "ChromeDriver not installed"
+          echo "Checking Chrome and ChromeDriver versions..."
+          google-chrome --version || echo "Google Chrome is not installed."
+          chromedriver --version || echo "ChromeDriver is not installed."
 
+      # Step 4: Install Google Chrome
       - name: Install Google Chrome
         run: |
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
+      # Step 5: Install ChromeDriver matching the installed Google Chrome version
       - name: Install ChromeDriver (Matching Current Chrome Version)
         run: |
+          echo "Installing ChromeDriver..."
           CHROME_VERSION=$(google-chrome --version | sed 's/Google Chrome //' | cut -d '.' -f 1)
+          echo "Detected Chrome Version: $CHROME_VERSION"
           DRIVER_VERSION=$(curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION)
+          if [ -z "$DRIVER_VERSION" ]; then
+            echo "Error: Unable to find matching ChromeDriver version for Chrome $CHROME_VERSION"
+            exit 1
+          fi
+          echo "Installing ChromeDriver Version: $DRIVER_VERSION"
           wget -N https://chromedriver.storage.googleapis.com/$DRIVER_VERSION/chromedriver_linux64.zip
-          unzip chromedriver_linux64.zip
+          unzip -o chromedriver_linux64.zip
           sudo mv chromedriver /usr/local/bin/
           sudo chmod +x /usr/local/bin/chromedriver
+          rm chromedriver_linux64.zip
 
+      # Step 6: Restore project dependencies
       - name: Restore Dependencies
         run: dotnet restore
 
+      # Step 7: Build the project
       - name: Build the project
-        run: dotnet build --no-restore
+        run: dotnet build --no-restore --configuration Release
 
+      # Step 8: Run all unit and integration tests
       - name: Run Tests
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test --no-build --verbosity normal --configuration Release
