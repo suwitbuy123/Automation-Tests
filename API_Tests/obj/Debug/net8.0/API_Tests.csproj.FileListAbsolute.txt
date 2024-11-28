@@ -1,0 +1,13 @@
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/bin/Debug/net8.0/API_Tests.deps.json
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/bin/Debug/net8.0/API_Tests.dll
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/bin/Debug/net8.0/API_Tests.pdb
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/obj/Debug/net8.0/API_Tests.csproj.AssemblyReference.cache
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/obj/Debug/net8.0/API_Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/obj/Debug/net8.0/API_Tests.AssemblyInfoInputs.cache
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/obj/Debug/net8.0/API_Tests.AssemblyInfo.cs
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/obj/Debug/net8.0/API_Tests.csproj.CoreCompileInputs.cache
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/obj/Debug/net8.0/API_Tests.sourcelink.json
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/obj/Debug/net8.0/API_Tests.dll
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/obj/Debug/net8.0/refint/API_Tests.dll
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/obj/Debug/net8.0/API_Tests.pdb
+/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/obj/Debug/net8.0/ref/API_Tests.dll

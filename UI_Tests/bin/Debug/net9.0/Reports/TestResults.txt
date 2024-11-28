@@ -1,0 +1,128 @@
+11/24/2024 5:55:39 PM: Login successful for user: standard_user
+11/24/2024 5:57:08 PM: Login successful for user: standard_user
+11/24/2024 5:57:39 PM: Login failed for user: standard_user2. Error: Epic sadface: Username and password do not match any user in this service
+2024-11-24 18:02:04: Login failed for user: standard_user2. Error: Epic sadface: Username and password do not match any user in this service
+2024-11-24 18:02:04: Unexpected error occurred: Login failed for user: standard_user2. Error: Epic sadface: Username and password do not match any user in this service
+2024-11-24 18:02:32: Login successful for user: standard_user
+2024-11-24 21:26:52: Login successful for user: standard_user
+2567-11-24 21:27:32: Login successful for user: standard_user
+2024-11-24 21:43:11: Login successful for user: standard_user
+2567-11-24 21:47:08: Login successful for user: standard_user
+2567-11-24 22:01:36: CompleteCheckoutProcess: Checkout process completed successfully.
+2567-11-24 22:01:38: Login successful for user: standard_user
+2567-11-24 22:02:54: Login successful for user: standard_user
+2024-11-24 22:04:17: Login successful for user: standard_user
+2024-11-24 22:06:38: Login successful for valid user: standard_user
+2024-11-24 22:07:04: Login failed as expected for invalid user: invalid_user. Error: Epic sadface: Username and password do not match any user in this service
+2024-11-24 22:34:45: Login failed as expected for invalid user: invalid_user. Error: Epic sadface: Username and password do not match any user in this service
+2024-11-24 22:34:47: Login successful for valid user: standard_user
+2567-11-24 22:35:05: Login failed as expected for invalid user: invalid_user. Error: Epic sadface: Username and password do not match any user in this service
+2567-11-24 22:35:07: Login successful for valid user: standard_user
+2024-11-24 22:43:03: Login failed as expected for invalid user: invalid_user. Error: Epic sadface: Username and password do not match any user in this service
+2024-11-24 22:43:04: Login successful for valid user: standard_user
+2024-11-25 20:50:15: Login successful for user: standard_user
+2024-11-25 21:59:28: Validation Error: Epic sadface: Sorry, this user has been locked out.
+2024-11-25 22:06:01: Validation Error: Epic sadface: Sorry, this user has been locked out.
+2024-11-25 22:11:58: Validation Error: Epic sadface: Sorry, this user has been locked out.
+2024-11-25 23:12:06: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-25 23:12:55: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-25 23:13:18: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-25 23:16:01: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-25 23:18:19: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 08:49:24: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 15:58:16: Login successful for user: standard_user
+2024-11-26 15:58:21: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:02:16: Login successful for user: standard_user
+2024-11-26 16:02:21: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:04:35: Login successful for user: standard_user
+2024-11-26 16:04:39: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:07:13: Login successful for user: standard_user
+2024-11-26 16:07:18: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:16:27: Login successful for user: standard_user
+2024-11-26 16:16:31: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:17:23: Login successful for user: standard_user
+2024-11-26 16:17:27: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:19:14: Login successful for user: standard_user
+2024-11-26 16:19:17: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:32:51: Login successful for user: standard_user
+2024-11-26 16:33:00: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:35:29: Login successful for user: standard_user
+2024-11-26 16:35:39: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:37:25: Login successful for user: standard_user
+2024-11-26 16:37:35: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:45:03: Login successful for user: standard_user
+2024-11-26 16:45:13: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:46:19: Login successful for user: standard_user
+2024-11-26 16:46:23: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:51:21: Login successful for user: standard_user
+2024-11-26 16:51:30: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:56:12: Login successful for user: standard_user
+2024-11-26 16:56:21: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 16:59:33: Login successful for user: standard_user
+2024-11-26 16:59:42: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 17:04:41: Login successful for user: standard_user
+2024-11-26 17:04:55: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 17:08:26: Login successful for user: standard_user
+2024-11-26 17:08:41: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 17:19:25: Login successful for user: standard_user
+2024-11-26 17:19:35: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 17:23:34: Login successful for user: standard_user
+2024-11-26 17:23:43: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 17:26:33: Login successful for user: standard_user
+2024-11-26 17:26:42: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 17:27:38: Login successful for user: standard_user
+2024-11-26 17:27:47: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 17:28:43: Login successful for user: standard_user
+2024-11-26 17:28:52: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 17:30:52: Login successful for user: standard_user
+2024-11-26 17:31:02: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 17:36:44: Login successful for user: standard_user
+2024-11-26 17:36:53: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 17:37:47: Login successful for user: standard_user
+2024-11-26 17:37:57: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 17:50:11: Login successful for user: standard_user
+2024-11-26 17:50:36: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 18:02:41: Login successful for user: standard_user
+2024-11-26 18:03:05: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 18:33:45: Login successful for user: standard_user
+2024-11-26 18:34:17: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 20:41:03: Login successful for user: standard_user
+2024-11-26 20:41:27: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 22:42:21: Login successful for user: standard_user
+2024-11-26 22:42:25: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 22:44:02: Login successful for user: standard_user
+2024-11-26 22:44:06: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 22:55:12: Login successful for user: standard_user
+2024-11-26 22:55:15: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 23:05:23: Login successful for user: standard_user
+2024-11-26 23:05:26: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 23:11:34: Login successful for user: standard_user
+2024-11-26 23:11:37: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 23:16:25: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 23:29:16: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 23:30:14: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-26 23:35:59: Login successful for user: standard_user
+2024-11-26 23:36:03: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-27 08:39:00: Login successful for user: standard_user
+2024-11-27 08:39:04: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-27 22:41:06: Login successful for user: standard_user
+2024-11-27 22:41:10: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-27 23:02:01: Login successful for user: standard_user
+2024-11-27 23:02:05: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-27 23:35:09: Login successful for user: standard_user
+2024-11-27 23:35:13: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-28 00:08:12: Login successful for user: standard_user
+2024-11-28 00:08:15: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-28 00:38:37: Login successful for user: standard_user
+2024-11-28 00:38:41: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-28 00:41:48: Login successful for user: standard_user
+2024-11-28 00:41:51: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-28 01:16:42: Login successful for user: standard_user
+2024-11-28 01:16:46: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-28 02:28:13: Login successful for user: standard_user
+2024-11-28 02:28:16: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-28 07:01:48: Login successful for user: standard_user
+2024-11-28 07:03:07: Login successful for user: standard_user
+2024-11-28 07:03:11: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
+2024-11-28 07:04:53: Login successful for user: standard_user
+2024-11-28 07:04:57: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
