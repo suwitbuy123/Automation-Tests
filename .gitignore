@@ -1,0 +1,41 @@
+# Logs
+*.log
+Logs/
+
+
+# Build files and outputs
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# User-specific files
+.vscode/
+.idea/
+*.user
+*.swp
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+# Debugging-related files
+*.log
+*.screenshot
+Screenshots/
+
+# System files
+*.DS_Store
+*.lock
+
+

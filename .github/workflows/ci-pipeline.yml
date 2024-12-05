@@ -23,7 +23,7 @@ jobs:
         with:
           dotnet-version: "9.0.x"
 
-      # Step 3: Verify the versions of Google Chrome and ChromeDriver (if already installed)
+      # Step 3: Verify the versions of Google Chrome and ChromeDriver
       - name: Verify Chrome and ChromeDriver Versions
         run: |
           echo "Checking Chrome and ChromeDriver versions..."
@@ -62,6 +62,6 @@ jobs:
       - name: Build the project
         run: dotnet build --no-restore --configuration Release
 
-      # Step 8: Run all unit and integration tests
+      # Step 8: Run all tests
       - name: Run Tests
         run: dotnet test --no-build --verbosity normal --configuration Release

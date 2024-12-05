@@ -17,7 +17,8 @@ namespace UI_Tests.Tests
         private TestCredentials credentials = new TestCredentials();
 
         // Paths for test reports and credentials
-        private const string ReportFolderPath = "/Users/suwit/Desktop/AutomationAssignment/UI_Tests/Reports";
+        private readonly string ReportFolderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "Reports");
+
         private const string TestResultsFile = "TestResults.txt";
 
         [SetUp]
@@ -26,7 +27,7 @@ namespace UI_Tests.Tests
             try
             {
                 // Load credentials from a JSON file located in the specified path
-                var jsonFilePath = "/Users/suwit/Desktop/AutomationAssignment/UI_Tests/TestData/TestCredentials.json";
+                var jsonFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "TestData", "TestCredentials.json");
 
                 // Verify that the file exists
                 if (!File.Exists(jsonFilePath)) throw new FileNotFoundException($"Test credentials file not found at path: {jsonFilePath}");

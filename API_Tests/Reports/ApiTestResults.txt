@@ -8,3 +8,13 @@
 2024-11-28 00:07:56: GetProductsSortedAsc: Passed
 2024-11-28 00:07:57: UpdateProduct_InvalidId: Passed
 2024-11-28 00:07:57: UpdateProduct_ValidData: Passed
+2024-12-05 12:19:12: GetAllProducts_Performance: Completed in 1015ms
+2024-12-05 12:19:12: CreateProduct_InvalidData: Passed
+2024-12-05 12:19:13: CreateProduct_ValidData: Passed
+2024-12-05 12:19:13: DeleteProduct_InvalidId: Skipped - Expected '404 Not Found', but got '200 OK' with empty body.
+2024-12-05 12:19:14: DeleteProduct_ValidId: Passed
+2024-12-05 12:19:14: GetAllProducts: Passed
+2024-12-05 12:19:15: GetCategories: Passed
+2024-12-05 12:19:15: GetProductsSortedAsc: Passed
+2024-12-05 12:19:16: UpdateProduct_InvalidId: Passed
+2024-12-05 12:19:16: UpdateProduct_ValidData: Passed
