@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UI_Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a246863eda49d1bfa17866cf13da788dbf429115")]
+=======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c2ae5d53fd5757ba118fa6e304a53752f3291d4")]
+>>>>>>> origin/main
 [assembly: System.Reflection.AssemblyProductAttribute("UI_Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UI_Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

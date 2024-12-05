@@ -18,28 +18,39 @@ namespace UI_Tests.Tests
 
         // Paths for test reports and credentials
         private readonly string ReportFolderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "Reports");
+
         private const string TestResultsFile = "TestResults.txt";
 
         [SetUp]
         public void LoadCredentials()
         {
-            // Generate the path for the TestCredentials.json file.
-            // Use AppDomain.CurrentDomain.BaseDirectory to get the project directory
-            // and navigate to the relative path of the TestData folder.
-            string projectDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string jsonFilePath = Path.Combine(projectDirectory, "..", "..", "..", "TestData", "TestCredentials.json");
-
-            // Check if the file exists at the specified path.
-            if (!File.Exists(jsonFilePath))
+            try
             {
-                throw new FileNotFoundException($"Test credentials file not found at path: {jsonFilePath}");
+                // Load credentials from a JSON file located in the specified path
+                var jsonFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "TestData", "TestCredentials.json");
+
+                // Verify that the file exists
+                if (!File.Exists(jsonFilePath)) throw new FileNotFoundException($"Test credentials file not found at path: {jsonFilePath}");
+
+                // Deserialize the JSON file into the TestCredentials object
+                var jsonData = File.ReadAllText(jsonFilePath);
+                credentials = JsonConvert.DeserializeObject<TestCredentials>(jsonData) ?? new TestCredentials();
+
+                // Ensure the report folder exists, and create it if necessary
+                if (!Directory.Exists(ReportFolderPath))
+                {
+                    Directory.CreateDirectory(ReportFolderPath);
+                }
+
+                // Initialize the Test Results file with a header
+                File.WriteAllText(Path.Combine(ReportFolderPath, TestResultsFile), "Test Results:\n\n");
             }
-
-            // Read the JSON file and deserialize it into the TestCredentials object.
-            var jsonData = File.ReadAllText(jsonFilePath);
-            credentials = JsonConvert.DeserializeObject<TestCredentials>(jsonData) ?? new TestCredentials();
+            catch (Exception ex)
+            {
+                // Fail the test if loading credentials or initializing reports fails
+                Assert.Fail($"Failed to load test credentials or initialize report: {ex.Message}");
+            }
         }
-
 
         [Test]
         public void EndToEndWorkflowTest()
