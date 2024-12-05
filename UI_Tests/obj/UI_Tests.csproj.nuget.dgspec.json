@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/suwit/Desktop/Automation-Tests-Aperture/UI_Tests/UI_Tests.csproj": {}
+    "/Users/suwit/Automation-Tests-Aperture/UI_Tests/UI_Tests.csproj": {}
   },
   "projects": {
-    "/Users/suwit/Desktop/Automation-Tests-Aperture/UI_Tests/UI_Tests.csproj": {
+    "/Users/suwit/Automation-Tests-Aperture/UI_Tests/UI_Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/suwit/Desktop/Automation-Tests-Aperture/UI_Tests/UI_Tests.csproj",
+        "projectUniqueName": "/Users/suwit/Automation-Tests-Aperture/UI_Tests/UI_Tests.csproj",
         "projectName": "UI_Tests",
-        "projectPath": "/Users/suwit/Desktop/Automation-Tests-Aperture/UI_Tests/UI_Tests.csproj",
+        "projectPath": "/Users/suwit/Automation-Tests-Aperture/UI_Tests/UI_Tests.csproj",
         "packagesPath": "/Users/suwit/.nuget/packages/",
-        "outputPath": "/Users/suwit/Desktop/Automation-Tests-Aperture/UI_Tests/obj/",
+        "outputPath": "/Users/suwit/Automation-Tests-Aperture/UI_Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/suwit/.nuget/NuGet/NuGet.Config"

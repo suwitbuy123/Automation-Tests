@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RBW1+/pmGRg=",
+  "dgSpecHash": "EywcJVRvM8E=",
   "success": true,
-  "projectFilePath": "/Users/suwit/Desktop/Automation-Tests-Aperture/API_Tests/API_Tests.csproj",
+  "projectFilePath": "/Users/suwit/Automation-Tests-Aperture/API_Tests/API_Tests.csproj",
   "expectedPackageFiles": [
     "/Users/suwit/.nuget/packages/microsoft.codecoverage/17.12.0/microsoft.codecoverage.17.12.0.nupkg.sha512",
     "/Users/suwit/.nuget/packages/microsoft.net.test.sdk/17.12.0/microsoft.net.test.sdk.17.12.0.nupkg.sha512",
