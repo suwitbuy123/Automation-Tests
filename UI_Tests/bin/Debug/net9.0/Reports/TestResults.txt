@@ -126,21 +126,3 @@
 2024-11-28 07:03:11: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
 2024-11-28 07:04:53: Login successful for user: standard_user
 2024-11-28 07:04:57: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
-2024-12-05 12:19:46: Login successful for user: standard_user
-2024-12-05 12:25:25: Login successful for user: standard_user
-2024-12-05 12:28:12: Login successful for user: standard_user
-2024-12-05 12:28:58: Login successful for user: standard_user
-2024-12-05 12:29:43: Test data is missing or invalid for validUser.
-2024-12-05 12:29:43: Unexpected error occurred: Test data is missing or invalid for validUser.
-2024-12-05 12:31:19: Test data is missing or invalid for validUser.
-2024-12-05 12:31:19: Unexpected error occurred: Test data is missing or invalid for validUser.
-2024-12-05 12:31:23: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
-2024-12-05 12:32:59: Test data is missing or invalid for validUser.
-2024-12-05 12:32:59: Unexpected error occurred: Test data is missing or invalid for validUser.
-2024-12-05 12:33:03: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
-2024-12-05 12:35:54: Login successful for user: standard_user
-2024-12-05 12:35:57: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
-2024-12-05 12:41:42: Login successful for user: standard_user
-2024-12-05 12:41:46: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.
-2024-12-05 12:45:35: Login successful for user: standard_user
-2024-12-05 12:45:38: Login failed for user 'locked_out_user': Epic sadface: Sorry, this user has been locked out.

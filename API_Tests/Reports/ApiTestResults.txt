@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2024-11-28 00:07:52: GetAllProducts_Performance: Completed in 986ms
 2024-11-28 00:07:52: CreateProduct_InvalidData: Passed
 2024-11-28 00:07:53: CreateProduct_ValidData: Passed
@@ -18,3 +19,5 @@
 2024-12-05 12:19:15: GetProductsSortedAsc: Passed
 2024-12-05 12:19:16: UpdateProduct_InvalidId: Passed
 2024-12-05 12:19:16: UpdateProduct_ValidData: Passed
+=======
+>>>>>>> origin/main
