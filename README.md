@@ -1,4 +1,4 @@
-# Automation-Tests-Aperture
+# Automation-Tests
 
 Automation testing project covering API and UI tests for the Aperture assignment. Includes, reporting, and CI/CD integration.
 
